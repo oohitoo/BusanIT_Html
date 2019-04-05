@@ -1,0 +1,87 @@
+span {
+/*    background: yellow;*/
+    font-size: 50px;
+}
+
+a {
+    cursor: move;
+    color: red;
+}
+
+/*
+ul {
+    color: blue;
+    list-style: square;
+}
+*/
+
+/*
+* {
+    font-size: 20px;
+}
+*/
+
+p {
+/*    background-color: yellow;*/
+    font-size: 12px;
+    margin-left: 20px
+}
+.accent{
+    color: blue;
+    font-weight: bold; /* 글자 굵게 */
+}
+#title{
+    clear: both; /* 이전 요소와 줄바꿔서 표시 */
+    float: left;
+    margin-left: 10px;
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+    border: 1px solid black;
+    text-align: center;
+}
+#pic1{
+    clear: none; /* 이전 요소와 연결해서 표시 */
+    float: left;
+    margin-left: 10px;
+    width: 200px;
+    height: 100px;
+}
+#pic2{
+    clear: both; /* 이전욧와 줄바꿔서 표시*/
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 200px;
+    height: 100px;
+}
+#pic3{
+    clear: none;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 200px;
+    height: 100px;
+}
+#first{
+    background: red;
+}
+#second{
+    background: yellow;
+}
+/* 클래스 선택자 */
+span.title{
+    background: yellow;
+    font-size: 30px;
+}
+span.desc{
+    background-color: gray;
+    font-size: 20px;
+}
+ul, li{
+    font-size: 16px;
+    line-height: 25pxl
+}
+a[href]{
+    background: yellow;
+}

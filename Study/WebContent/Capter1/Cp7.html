@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../style.css">
+<style>
+    input[type="text"]{
+        width: 150px;
+        background-color: skyblue;
+        border: 1px solid #000; /* 검은색 실선*/
+    }
+    input[type="tex"]{
+        width: 150px;
+        background-color: mediumslateblue;
+        border: 1px solid #000; /* 검은색 실선*/
+    }
+/*    h5[title] { background-color: red;}*/
+    h5[class ~= header] { background-color: yellow;}
+    h5[class ^=con] { background-color: blue;}
+    h5[class $= esc] { background-color: orange;}
+    h5[class *= tiv] { background-color: purple;}
+    
+    input[type=text]{width: 50px;}
+    input[type=password]{ background-color: red;}
+    input[type=tel]{ font-size: 30px;}
+    input[type=search]{ font-style: italic;}
+    
+    </style>
+<body>
+    <div style="background: red;">첫번째 div</div>
+    <div style="background: blue;">두번쨰 div</div>
+    <span>Span</span>
+    <a>A태그</a>
+
+    <hr size="10" align="left" width="90%" noshade="noshade">
+
+    <section>
+        <h2>예약방법 및 요금</h2>
+        <p>요안도라 예약의 가장 빠른 방법은?</p>
+        <ul>
+            <li>예약방법</li>
+            <ul>
+                <li>직접 통화</li>
+                <li>문자 남기기</li>
+            </ul>
+            <li>요금</li>
+            <ul>
+                <li>1인 : 40,000 원</li>
+                <li>2인 : 60,000 원</li>
+                <li>3인 : 80,000 원</li>
+                <li>4인 : 100,000 원</li>
+                <li>4인 이상일 경우 상의해 주세요.</li>
+            </ul>
+        </ul>
+    </section>
+
+    <hr size="10" align="left" width="90%" noshade="noshade">
+
+    <p> P 문단 태그 내용</p>
+    <a> A 앵커 태그 사용</a>
+
+    <hr size="10" align="left" width="90%" noshade="noshade">
+    
+    <section>
+        <h2>요안도라 소개</h2>
+        <h3> Ω 요안도라는 게스트하우스(Guest House) 형식의 농어촌 민박입니다.</h3>
+        <p class="accent"> 성산의 날씨는 다음주 내내 높은 구름에 햇살 가득이라고 합니다.</p>
+        <p>목요일이면 섭씨 27도까지 오른다고 하지만.</p>
+        <p>늘 부는 바람이 쾌적한 균형을 잡아 마당에 마당에 나가 앉아 있는 시간이 많아질듯합니다.</p>
+        <p>오늘은 사진에 보이는 긴 돌담을 따라 들어오는 <span class="accent">요안도레 올레 입구</span>에 특곤색의 대문을 달았습니다.</p>
+    </section>
+    
+    <div id="title"> <h2>YOANDORA</h2></div>
+    <div id="pic1"><img src="../download.jpg"></div>
+    <div id="pic2"><img src="../download.jpg"></div>
+    <div id="pic3"><img src="../download.jpg"></div>
+    
+    <hr size="10" align="left" width="90%" noshade="noshade">
+    <br><br><br>
+    
+    <div id ="first">첫번째 div</div>
+    <div id ="second">두번째 div</div>
+    <span class="title">SPAN1</span>
+    <span class="desc">SPAN2</span>
+    
+    <section id="container">
+       <header><h1>객실소개</h1></header>        
+        <h3>객실 안내</h3>
+        <ul>
+        <li><a href="Cp2.html"><b>2인실(유채방, 동백방)</b></a>동성 또는 가족 2인 공동 취사실 및 욕실(화장실) 사용</li>
+        <li><a href="Cp3.html"><b>4인실(펜션)</b></a>취사기구 완비, 실내 욕실(화장실)</li>
+        </ul>
+    </section>
+    
+    <label for="name"> 예약자</label>
+    <input type="text" name="name" id="name"><br><input type="tex" name="name" id="name">
+    
+    <h5> h5제목</h5>
+    <h5 title="제목1">가나다</h5>
+    <h5 calss="title header">h5 제목2</h5>
+    <h5 title="content">h5 제목3</h5>
+    <h5 title="desc">h5 제목4</h5>
+    <h5 title="activ">h5 제목5</h5>
+    
+    <input type="text"><br>
+    <input type="password"><br>
+    <input type="tel"><br>
+    <input type="search"><br>
+    
+    
+</body>
+
+</html>

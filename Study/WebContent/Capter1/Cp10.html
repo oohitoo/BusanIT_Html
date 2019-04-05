@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+
+<body>
+    <!--
+    <div>
+        Contents1
+    </div>
+    <div>
+        Contents2
+    </div>
+    <div>
+        Contents3
+    </div>
+    
+    <h3> 상대 배치, Relative</h3>
+    <hr>
+        <div>T</div>
+        <div id ="down">h</div>
+        <div>a</div>
+        <div id ="up">n</div>
+        <div>k</div>
+        
+    <h3>헤헤헤헤 트리</h3>
+    <img src="../download.jpg" alt="사진없어요">
+    <div id="fixed">
+        트리가 만들어졌습니다.
+    </div>
+    
+    <h3>학기말 공지</h3>
+    <p id="float">
+        24일은 피아니스트 조성진의 크리스마스 특별 연주가 있습니다.
+    </p>
+    <p>이제 곧 겨울 방학이 시작됩니다 학기중 못다한 언어 열심히 하기 바람.</p>
+    
+-->
+    <!--
+    <h3>z-index 프로퍼티</h3>
+    <hr>
+    <div>
+        <img id="spadeA" src="../download.jpg" width="100" height="140" alt="스페이스A">
+        <img id="spade2" src="../download.jpg" width="100" height="140" alt="스페이스2">
+        <img id="spade3" src="../download.jpg" width="100" height="140" alt="스페이스3">
+        <img id="spade7" src="../download.jpg" width="100" height="140" alt="스페이스7">
+    </div>
+-->
+
+    <input type="checkbox" id="a"><label for="a">정보1</label>
+    <textarea name="info_a"></textarea>
+    <br><input type="checkbox" id="b"><label for="a">정보2</label>
+    <textarea name="info_a"></textarea>
+    <br><input type="checkbox" id="c"><label for="a">정보3</label>
+    <textarea name="info_a"></textarea>
+    <br>
+
+    <h3>overflow 프로퍼티</h3>
+    <hr>
+    <p class="hidden">over에 hidden값을 적용하면 박스를 넘어가는 내용이 잘려 보이지 않음</p>
+    <p class="visible">over에 visible을 적용하면 콘텐트가 박스를 넘어가서도 출력됩니다.</p>
+    <p class="scroll">over에 scroll값을 적용하면 박스에 스크롤바를 붙여 출력합니다.</p>
+
+    <nav id="menubar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Espresso</a></li>
+            <li><a href="#">Cafe Latte</a></li>
+            <li><a href="#">F.A.Q</a></li>
+        </ul>
+    </nav>
+
+    <h3>1학기 성적</h3>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>HTML</th>
+                <th>CSS</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>황기태</td>
+            <td>80</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>이재문</td>
+            <td>95</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>이병은</td>
+            <td>85</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>김남윤</td>
+            <td>50</td>
+            <td>40</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td>합</td>
+                <td>310</td>
+                <td>249</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <div id="content">
+        <div>
+            <h1>공지사항</h1>
+            <ul>
+                <li>게시물_01</li>
+                <li>게시물_02</li>
+            </ul>
+        </div>
+        <div>
+            <h1>공지사항</h1>
+            <ul>
+                <li>게시물_01</li>
+                <li>게시물_02</li>
+            </ul>
+        </div>
+        <div>
+            <h1>공지사항</h1>
+            <ul>
+                <li>게시물_01</li>
+                <li>게시물_02</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>CONTACT US</h3>
+    <hr>
+    <form action="" method="post">
+        Name <input type="text" placeholder="Elvis"><br>
+        Email <input type="email" placeholder="elvis@graceland.com"><br>
+        Comment <textarea placeholder="메시지를 남겨주세요">1111</textarea><br>
+        <input type="submit" value="submit">
+    </form>
+    
+    <h4>꽝!</h4>
+    <hr>
+    꽝! 글자가 3초동안 500%에서 시작하여 100%로 바뀌는 애니메이션입니다. 무한반복합니다.
+    
+    <h3>전환</h3>
+    <span>꽝</span>글자에 마우스를 올려보세요.<br>
+    <hr>
+    
+    <input type="radio" name="tab" id="tab1">
+    <label for="tab1"><span>공지사항</span></label>
+    <input type="radio" name="tab" id="tab2">
+    <label for="tab2"><span>FAQ</span></label>
+    <div id="content1">공지사항목록</div>
+    <div id="content2">FAQ목록</div>
+    
+    <div class="rec"></div>
+    
+</body>
+<style>
+    .rec{
+        width: 100px; height: 200px;
+        background-color: red;
+        transition-duration: 1s;
+    }
+    .rec:hover{
+        width: 200px; height: 100px;
+        background-color: blue;
+        transform: rotate3d(360deg);
+    }
+    .rec:active{
+        width: 200px; height: 200px;
+        background-color: green;
+        transition-duration: 3s;
+        border-radius: 100px;
+    }
+    div{
+        display: none;
+    }
+    input{
+        display: none;
+    }
+    input:checked + label{
+        background: red;
+    }
+    input:nth-of-type(1):checked ~ div:nth-of-type(1){
+        display: block;
+    }
+    input:nth-of-type(2):checked~ div:nth-of-type(2){
+        display: block;
+    }
+/*
+    span{
+        transition: font-size 5s;
+    }
+    span:hover{
+        font-size: 500%;
+    }
+    @keyframes bomb{
+        from {font-size: 500%;}
+        to {font-size: 100%;}
+    }
+    h4{
+        animation-name: bomb;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+*/
+    input[type=text] {
+        color: red;
+    }
+
+    input[type=text]:hover {
+        /* 마우스를 올릴떄*/
+        background: aliceblue;
+    }
+
+    input[type=text]:focus,
+    input[type=email]:focus {
+        font-size: 120%;
+        color: red;
+    }
+
+    #content {
+        background: gray;
+        width: auto;
+        height: auto;
+    }
+
+    #content div {
+        display: inline-block;
+        border-radius: 10px;
+        margin: 10px;
+        width: 200px;
+        background-color: white;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    thead,
+    tfoot {
+        background: darkgray;
+        color: yellow;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 5px;
+        height: 15px;
+        width: 100px;
+    }
+
+    tbody tr:nth-child(even) {
+        background: aliceblue;
+    }
+
+    tbody tr:hover {
+        background: pink;
+    }
+
+    #menubar {
+        background: olive;
+    }
+
+    #menubar ul {
+        margin: 0;
+        padding: 0;
+        width: 567;
+        /*모든 아이템 한줄에 품을수 있도록 폭*/
+    }
+
+    #menubar ul li {
+        display: inline-block;
+        /* 새 줄로 넘어가지 않게*/
+        list-style-type: none;
+        /* 마커 삭제*/
+        padding: 0px 15px;
+        /* top = bottom=0, left=right=15px */
+    }
+
+    #menubar ul li a {
+        color: white;
+        text-decoration: none;
+        /* 링크 보이지 않게*/
+    }
+
+    #menubar ul li a:hover {
+        color: violet;
+        /* 마우스 올리면 색상 변경*/
+    }
+
+    textarea {
+        display: none;
+    }
+
+    input:checked+label+textarea {
+        display: inline-block;
+    }
+
+    p {
+        width: 300px;
+        height: 30px;
+        border: 1px solid black;
+    }
+
+    .hidden {
+        overflow: hidden;
+    }
+
+    .visible {
+        overflow: visible;
+    }
+
+    .scroll {
+        overflow: scroll;
+    }
+
+    /*
+    div{
+        width: 100px; height: 100px;
+        margin: 10px;
+        border-radius: 60px;  원형 깍기 
+    }
+    div:first-of-type{
+        background: red;
+        background-image: url(../download.jpg);
+    }
+    div:nth-of-type(2){
+        background: green;
+        border: 5px solid black;
+    }
+    div:last-of-type{
+        background: blue;
+        border: 5px solid black;
+        box-sizing: border-box;
+    }
+*/
+    /*
+    div{
+        display: inline-block;
+        width: 50px; height: 50px;
+        background: red;
+        color: white;
+        text-align: center;
+    }
+    #down:hover{
+        position: relative;
+        left: 20px;
+        top : 20px;
+        background: green;
+    }
+    #up:hover{
+        position: relative;
+        right : 20px;
+        bottom: 20px;
+        background: green;
+    }
+    #fixed{
+        position: fixed;
+        bottom: 10px;
+        right: 10;
+        width: 100px;
+        padding: 5px;
+        background: red;
+        color: white;
+    }
+    #float{
+        float: right;
+        border: 1px dotted black;
+        width: 7em;
+        padding: 0.25em;
+        margin: 1em;
+    }
+*/
+    /*
+    div{position: absolute}
+    img{position: absolute}
+    #spadeA{
+        z-index: -3; left: 10px; top: 20px;
+    }
+    #spade2{
+        z-index: 2; left: 40px; top :30px;
+    }
+    #spade3{
+        z-index: 3; left: 80px; top :40px;
+    }
+    #spade7{
+        z-index: 7; left: 120px; top :50px;
+    }
+*/
+</style>
+</html>

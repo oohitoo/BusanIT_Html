@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    /*
+    body > p {
+        color: blue;
+    }
+*/
+
+    li>a {
+        color: red;
+    }
+
+    p[company=gm] {
+        color: blue;
+    }
+
+    p[company=bmw] {
+        color: red;
+    }
+
+    div>span {
+        background: orange;
+    }
+
+    div span {
+        color: blue;
+    }
+
+    li>span {
+        border: 1px solid red;
+    }
+    /* h1 다음으로 나오는 ul 태그에 적용 */
+    h1+ul {
+        color: blue;
+        font-weight: bold
+            /* 글자 굵게*/
+    }
+    h1 {
+        color: red;
+    }
+    h1+h1{
+        color: green;
+    }
+    h1+h2{
+        color: blue;
+    }
+    h2+h2{
+        color: brown;
+    }
+    /* 태그 이름 셀렉터*/
+    h3, li {
+        color: brown;
+    }
+    div > div > strong{
+        background: yellow;
+    }
+    ul > strong{
+        color: dodgerblue;
+    }
+    .waring{
+        color: red;
+    }
+    #list{
+        background-color: mistyrose;
+    }
+    #list span {
+        color: forestgreen;
+    }
+    h3 :first-letter{
+        color: red;
+    }
+    li :hover{
+        background-color: yellowgreen;
+    }
+    
+</style>
+
+<body>
+    <p>학습내용</p>
+    <ul>
+        <li><a>자바</a></li>
+        <li>
+            <h1>JAVA</h1>
+        </li>
+        <li><a>데이터베이스</a></li>
+        <li>
+            <h1>DATABASE</h1>
+        </li>
+        <li><a>스프링</a></li>
+        <li>
+            <h1>SPRING</h1>
+        </li>
+    </ul>
+
+    <hr size="10" align="left" width="90%" noshade="noshade">
+
+    <p>프라이드</p>
+    <p company='gm'>울란도</p>
+    <p>SM6</p>
+    <p>k3</p>
+    <p company='gm'>스파크</p>
+    <p>qm3</p>
+    <p company='bmw'>미니쿠페</p>
+
+    <hr size="10" align="left" width="90%" noshade="noshade">
+
+    <div id ='div'>
+        <span>DIV 내부 SPAN</span>
+        <ul>
+            <li>
+                <span>li 내부 Span</span>
+            </li>
+        </ul>
+    </div>
+
+    <section id="container">
+        <h2>예약 방법 및 요금</h2>
+        <ul>
+            <li>직접통화</li>
+            <li>문자남기기</li>
+        </ul>
+        <ul>
+            <li>1인 : 40,000원</li>
+            <li>2인 : 60,000원</li>
+            <li>3인 : 80,000원</li>
+            <li>4인 : 100,000원</li>
+        </ul>
+    </section>
+
+    <hr size="10" align="left" width="90%" noshade="noshade">
+    
+    <h1>냉면</h1>
+    <h1>밀면</h1>
+    <h2>족발</h2>
+    <h2>삼겹살</h2>
+    
+    <h3>Web Programming</h3>
+    <div>
+        <div>2학기<strong>학습내용</strong>입니다.</div>
+        <ul id="list">
+            <li><span>HTML5</span></li>
+            <li><strong>CSS</strong></li>
+            <li>JavaScript</li>
+        </ul>
+        <div class ="waring"> 60점이하는 F </div>
+    </div>
+
+</body>
+</html>

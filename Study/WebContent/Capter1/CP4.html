@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+	table {text-align: center; border-color: blue;}
+	div { background-color : skyblue; padding : 20px;}
+</style>
+<title> HTML 특수문자 </title>
+</head>
+<body>
+	<header>
+	
+		<!-- 특수문자 사용 -->
+	
+		<center>
+			<h1> &lt; HTML 특수문자  &gt; </h1> <!-- < : 엘임 -->
+		</center>
+		<section>
+			<article>
+				&num; 풀스택 개발자를 위한 웹 프로그래밍 &num;
+				<p></p>
+				HTML5 &#38; CSS &#38; Java Script &#38; JQuery
+			</article>
+		</section>
+		<hr size="10" align ="left" width="90%" noshade="noshade"></hr>
+		<footer>
+			<small>
+				&nbsp; &nbsp; &copy; 한빛아카데미 &nbsp;&nbsp;
+				&nbsp;&nbsp; &reg; 2017 
+			</small>
+		</footer>
+	</header>
+	
+	<!-- < pre 태그 > -->
+	
+	<header>
+		<center><h2> &lt; pre &gt; 태그 </h2></center>
+	</header>
+	<section>
+		<article>
+			<pre>
+				&num;&num;&num; 풀스택 개발자를 위한 웹 프로그래밍 &num;&num;&num;</p>
+				HTML5 & CSS3 &JavaScript & JQuery</p>
+				&lt; 가격 : 35,000 &gt; 
+			</pre>
+		</article>
+	</section>
+	<footer>
+		<hr size="10" align="left" width="90%" noshade="noshade">
+	</footer>
+	
+	<!--택스트 관련 태그 -->
+	
+	<center>
+		<h2>&lt; 텍스트 관련 태그 &gt; </h2>
+	</center>
+	<section>
+		<article>
+			<p><b>텍스트 볼드 처리</b></p>
+			<p><strong>텍스트 중요 표시</strong></p>
+			<p><i>텍스트를 이탤릭체로</i></p>
+			<p><em>텍스트 강조 표시</em></p>
+			<p><ins>텍스트 밑줄 처리</ins></p>
+			<p><del>텍스트 가운데 처리</del></p>
+			<p>테스트 <sub>아래첨자</sub><sup>윗첨자</sup></p>
+			<p><mark>텍스트에 하이라이트 표시</mark></p>
+		</article>
+	</section>
+	<footer>
+		<hr size="10" align="left" width="90%" noshade="noshade">
+	</footer>
+	
+	<!-- 하이퍼링크 4가지 방법  -->
+	
+	<center>
+		<h2> &lt; 하이퍼 링크 관련 태그 &gt; </h2>
+	</center>
+	<section>
+		<article>
+			<a href="https://github.com/oohitoo" target="_blank"> Blank</a></p>
+			<a href="https://github.com/oohitoo" target="_self"> Self 타겟 안주면 나오는 기본태그</a></p>
+			<a href="https://github.com/oohitoo" target="_parent"> 부모 parent</a></p>
+			<a href="https://github.com/oohitoo" target="_top"> Top</a></p>
+		</article>
+	</section>	
+	<hr size="10" align="left" width="90%" noshade="noshade">
+	
+	<!-- 하이퍼링크 베이스 태그로 사용 -->
+	<!-- <base href="http://www.w3.org/"> <!-- 보통 Body 밖에 사용 하는데 연습이라 안에 사용함 -->
+	<header>
+		<article>
+			<h2>&lt; 베이스 태그 사용 &gt;</h2>
+				<a href="standards/" target="_blank"> W3C STANDARDS</a></p>
+				<a href="Consortium/mission.html" target="_blank"> W3C Misson</a></p>
+				<a href="Consortium/facts.html" target="_blank"> FACTS ABOUT W3C</a></p>
+				<a href="Consortium/presskit.html" target="_blank"> PRESS AND ANALYSTS</a></p>
+		</article>
+	</header>
+	<hr size="10" align="left" width="90%" noshade="noshade">
+	<!-- 책갈피 기능 -->
+	
+	<header>
+		<center>
+			<h2> &lt; 책갈피 기능 &gt; </h2>
+		</center>
+		
+		<section>
+			<article>
+				<a href="#user">[이름]</a>&nbsp;
+				<a href="#addr">[주소]</a>&nbsp;
+				<a href="#tel">[전화번호]</a>&nbsp;
+				<a href="#foot">[참고]</a>&nbsp;
+			</article>
+		</section>
+		
+		<p> 정보 영역 </p>
+		... 생략
+		<p> 정보 영역 </p>
+		<p> <a name="user">홍민성</a></p>
+		<a href="#top">[Top]</a> <!-- 최상위로 올라감 그 페이지 제일 위 -->
+		
+		<p> 정보 영역 </p>
+		... 생략
+		<p> 정보 영역 </p>
+		<p> <a name="addr"> 서울 강남구 신사동 291번지</a> </p>
+		<a href="#top">[Top]</a>
+		
+		<p> 정보 영역 </p>
+		... 생략
+		<p> 정보 영역 </p>
+		
+		<p id ="tel"> 02-2323-0909 </p>
+		<a href="#top">[TOP]</a>
+		
+		<p> 정보 영역 </p>
+		...생략
+		<p> 정보 영역 </p>
+	</header>
+	<footer>
+		<hr size="10" align="left" width="90%" noshade="noshade">
+	</footer>
+	
+	<!-- 이메일 보내기 -->
+	
+	<header>
+		<center>
+			<h2> &lt; 이메일 보내기 &gt; </h2>
+		</center>
+		<a href="mailto:oohitoo@naver.com">받는 사람</a><br>
+		<a href="mailto:oohitoo@naver.com?subject=질문있어요">받는사람, 제목</a><br>
+		<a href="mailto:oohitoo@naver.com?cc=참조, 메일, com&bcc=gooheekoo@gmail.com">받는사람, 참조, 숨은참조</a><br>
+		<a href="mailto:oohitoo@naver.com?cc=참조, 메일, com&bcc=gooheekoo@gmail.com&subject=질문 있어요 &body=웹프로그래밍">받는사람, 참조, 숨은참조, 제목, 본문</a><br>
+		<a href="mailto:oohitoo@naver.com?body=Line1-text%0D%ALine2-text">받는 사람, 본문 문단</a><br>
+	</header>
+	<footer>
+		<hr size="10" align="left" width="90%" noshade="noshade">
+	</footer>
+	
+	<!-- 목록 보여주기 -->
+	<header>
+		<center>
+			<h2> &lt; 목록 &gt;</h2>
+		</center>
+	</header>
+	
+	<!-- 동그라미 , 안으로 들어가서 동그라미 -->
+	
+	<section>
+		<article>
+			<ul>					
+			<li>Coffer</li>
+			<li>Tea
+				<ul>
+					<li>Black tea</li>
+					<li>Green tea</li>
+				</ul>
+			</li>
+			<li>Milk</li>
+		</ul>
+		</article>
+	</section>
+
+	<!-- 앞에 숫자 붙음 -->
+
+	<section>
+		<article>
+			<h2>순서 목록</h2>
+			<ol>
+				<li>Apples</li>
+				<li>Bananas</li>
+				<li>Lemons</li>
+				<li>Oranges</li>
+			</ol>
+		</article>
+	</section>
+	
+	<section>
+		<article>
+			<h2>정의형 목록</h2>
+				<dl>
+					<dt>첫번째 아이템 </dt>
+						<dd>-HTML5</dd>
+					<dt>두번쨰 아이템</dt>
+						<dd>-CSS3</dd>
+					<dt>세번째 아이템</dt>
+						<dd>-JavaScript</dd>
+				</dl>
+		</article>
+	</section>
+	<hr size="10" align="left" width="90%" noshade="noshade">
+	<!-- 테이블 Table -->
+	<header>
+		<h2> 테이블</h2>
+	</header>
+	<section>
+		<article>
+			<table border="1" style="width: 30%">
+				<tr>
+					<th>이름</th>
+					<th>점수</th>
+				</tr>
+				<tr>
+					<td>홍민성</td>
+					<td>90</td>
+				</tr>
+				<tr>
+					<td>최민수</td>
+					<td>80</td>
+				</tr>
+				<tr>
+					<td>심은경</td>
+					<td>70</td>
+				</tr>
+				<tr>
+					<td>합계</td>
+					<td>240</td>
+				</tr>
+			</table>
+		</article>
+	</section>
+	
+	<hr size="10" align="left" width="90%" noshade="noshade">
+	
+	<!-- Rowspan -->
+	<table border="1" style="width: 50%">
+		<tr>
+			<td>1행</td>
+			<td>1행 1열</td>
+		</tr>
+		<tr>
+			<td rowspan="2">2행</td>
+			<td>2행 2열</td>
+		</tr>
+		<tr>
+			<td>3행 2열</td>
+		</tr>
+	</table>
+	
+	<hr size="10" align="left" width="90%" noshade="noshade">
+	
+	<table border="1" style="width: 50%">
+		<tr>
+			<td>1행</td>
+			<td colspan="2">2행</td>
+		</tr>
+		<tr>
+			<td>2행 1열</td>
+			<td>2행 2열</td>
+			<td>2행 3열</td>
+		</tr>
+	</table>
+	
+	<hr size="10" align="left" width="90%" noshade="noshade">
+	
+	<table border="1" style="width: 50%">
+		<tr>
+			<td>가</td>
+			<td>나</td>
+			<td>다</td>
+			<td rowspan="4">라</td>
+		</tr>
+		<tr>
+			<td>마</td>
+			<td rowspan="3" colspan="2">바</td>
+		</tr>
+		<tr>
+			<td>사</td>
+		</tr>
+		<tr>
+			<td>아</td>
+		</tr>
+		<tr>
+			<td colspan="2">자</td>
+			<td colspan="2">차</td>
+		</tr>
+		<tr>
+			<td colspan="4">카</td>
+		</tr>
+	</table>
+	
+	<hr size="10" align="left" width="90%" noshade="noshade">
+	
+	<script type="text/javascript">
+	var path = window.location.pathname //현재 경로 확인
+	console.log(path); // 출력 
+	</script>
+	
+	<hr size="10" align="left" width="90%" noshade="noshade">
+	
+	<!-- 오디오 재생 -->
+	
+	<h3>오디오 자동 재생</h3>
+	<audio src="../EmbraceableYou.mp3" controls loop autoplay></audio>
+	<h3>오디오 수동 재생</h3>
+	<audio src="../EmbraceableYou.mp3" controls></audio>
+	<h3>오디오 다중 재생</h3>
+	<audio controls>
+		<source src="EmbraceableYou.mp3" type="audio/mpeg">
+		<source src="EmbraceableYou.ogg" type="audio/ogg">
+		<source src="EmbraceableYou.wav" type="audio/wav">
+	</audio>
+	
+	<!-- 비디오 재생 -->
+	
+	<hr size="10" align="left" width="90%" noshade="noshade">
+	
+	<h3>비디오 자동 재생</h3>
+	<video src="../bear.mp4" controls loop autoplay></video>
+	<h3>비디오 수동재생</h3>
+	<video src="../bear.mp4" controls width="300" height="250"></video>
+	<h3>비디오 다중 재생-비디오 파일이 현재 폴더에 있는 경우</h3>
+	<video controls autoplay width="300" height="250">
+		<source src= bear.mp4 type="video/mpeg">
+		<source src= bear.mp4 type="video/ogg">
+		<source src= bear.mp4 type="video/wav">
+	</video>
+	
+	<!-- ReView -->
+	
+	<div1>
+		<b>진하게</b><br>
+		<strong>중요한</strong><br>
+		<em>강조</em><br>
+		<i>이탤릭으로 강조하기</i><br>
+		<b><i>진하게 이탤릭으로 강조하기</i></b><br>
+		보통문자<small>한단계 작은 문자</small><br>
+		<del>삭제</del><br>
+		<ins>추가</ins><br>
+		보통문자의<sup>윗첨자</sup><br>
+		보통문자의<sub>아래첨자</sub><br>
+		<mark>하이라이팅</mark><br>
+	</div1>
+	
+	<hr size="10" align="left" width="90%" noshade="noshade">
+	
+	<h3>사랑</h3>
+	<hr>
+	
+	<div>
+		내 사람의 방언과 천사의 말을 할지라도 <span style="color:red">사랑</span>이 없으면 소리 나는 구리와 올리는 꽹과리가 되고, <span style="color:red">사랑</span>이 없으면 아무것도 아니라.
+	</div>
+	~우리 서로 사랑하며 살아요~
+	
+	<hr size="10" align="left" width="90%" noshade="noshade">
+	
+	<h3>내가 사는 이유</h3>
+	<hr>
+	<ul>
+		<li>내가 좋아하는 음식 많아요
+			<ul>
+				<li>감자탕</li>
+				<li>스파게티</li>
+				<li>올레국수</li>
+			</ul>
+		</li>
+		<li>라면먹기 좋아해요
+			<ol type="I">
+				<li> 라면을 끓인다.</li>
+				<li> 라면과 스프를 넣는다. </li>
+				<li> 파를 썰어 넣는다.</li>
+				<li> 한입에 다 먹는다.</li>
+			</ol>
+		</li>
+		<li>여름에는 바다로</li>
+		<li>가을에는 산으로 </li>
+	</ul>
+	
+	<hr size="10" align="left" width="90%" noshade="noshade">
+	
+	<h3>기본 구조를 가진 표</h3>
+	<hr>
+	1학기 성적
+	<table border ="1">
+		<tr>
+			<th>이름</th>
+			<th>HTML</th>
+			<th>CSS</th>
+		</tr>
+		<tbody>
+			<tr>
+				<td>황기태</td>
+				<td>80</td>
+				<td>70</td>
+			</tr>
+			<tr>
+				<td>이재문</td>
+				<td>95</td>
+				<td>99</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>이병은</td>
+				<td>40</td>
+				<td>61</td>
+			</tr>
+		</tfoot>
+	</table>
+	
+	<hr size="10" align="left" width="90%" noshade="noshade">
+	
+	<h3>링크의 target 속성 활용</h3>
+	<ul>	
+		<li><a href="http://www.w3c.org" target="_blank">W3C(새 윈도우, blank)</a>
+		<li><a href="http://www.w3c.org" target="_self">W3C(현재 윈도우, self)</a>
+		<li><a href="http://www.w3c.org" target="_parent">W3C(부모 윈도우, parent)</a>
+		<li><a href="http://www.w3c.org" target="_top">W3C(브라우저 윈도우, top)</a>
+	</ul>
+	
+	<hr size="10" align="left" width="90%" noshade="noshade">
+	
+	<!-- 다운로드 하는법 -->
+	
+	<h3>다운로드 하시오</h3>
+	<hr>
+	
+	<ul>
+		<li><a href="../Screenshot_2.png" download> 앨비스 이미지 다운</a></li>
+		<li><a href="../Screenshot_2.png" download> pdf 다운</a></li>
+		<li><a href="../bear.mp4" download> mp3 다운</a></li>
+		<li><a href="../Screenshot_2.png" download> hwp 다운</a></li>
+		<li><a href="../Screenshot_2.png" download> html 파일</a></li>
+	</ul>
+	
+</body>
+</html>

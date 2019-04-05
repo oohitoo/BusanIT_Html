@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+<style>
+    /* .은 class #은 ID*/
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .header {
+        width: 100%;
+        height: 15%;
+        background: yellow;
+    }
+
+    .nav {
+        width: 15%;
+        height: 70%;
+        float: left;
+        background: orange;
+    }
+
+    .section {
+        width: 70%;
+        height: 70%;
+        float: left;
+        background: olivedrab;
+    }
+
+    .aside {
+        width: 15%;
+        height: 70%;
+        float: left;
+        background: orange;
+    }
+
+    .footer {
+        width: 100%;
+        height: 15%;
+        clear: both;
+        background: plum;
+    }
+</style>
+
+<body>
+    <header class="header"> header</header>
+    <nav class="nav"> nav </nav>
+    <section class="section"> section </section>
+    <aside class="aside"> aside </aside>
+    <footer class="footer">footer </footer>
+
+    <hr size="10" align="left" width="auto" noshade="noshade">
+
+    <h3>인라인 시맨틱 태그 사례</h3>
+    <hr>
+
+    내일 <mark>HTML5 시험</mark><br>
+    시간은 <time>09:00</time>
+    난이도 <meter value="0.8">80%</meter><br>
+    자료 업로딩(20%) <progress value="2" max="10"></progress><br>
+
+    <hr size="10" align="left" width="auto" noshade="noshade">
+
+    <h3>HTML5 입력 양식의 주요 속성을 연습해봅시다.</h3>
+    <form>
+        <p>쓰기가능 : <input type="text" name="name" size="20" placeholder="이름을 입력해주세요." autofocus></p>
+        <p>읽기가능 : <input type="text" name="name" size="10" readonly></p>
+        <p>사용안함 : <input type="text" name="name" size="10" disabled></p>
+        <p>자동완성 : <input type="text" name="name" size="10" autocomplete="on" required></p>
+        <textarea cols="50" rows="3" spellcheck="true">오타를 체크합니다.</textarea>
+        <input type="submit" value="전송">
+        <input type="reset" value="취소">
+    </form>
+
+    <hr size="10" align="left" width="auto" noshade="noshade">
+
+    <table border="1">
+        <caption>배워야할과목</caption>
+        <tr>
+            <th>순번</th>
+            <th>과목</th>
+            <th>종류</th>
+            <th>난이도</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href="https://github.com/oohitoo">Java</a></td>
+            <td rowspan="2">Language</td>
+            <td rowspan="2">상</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>JSP</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Oracle</td>
+            <td rowspan="2">Database</td>
+            <td rowspan="2">중</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>MySQL</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>HTML</td>
+            <td rowspan="2">Language</td>
+            <td>하</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>JavaScript</td>
+            <td>중</td>
+        </tr>
+        <tr>
+            <td>계</td>
+            <td colspan="3">6 과목</td>
+        </tr>
+    </table>
+
+    <hr size="10" align="left" width="auto" noshade="noshade">
+
+    <!-- target = "if_a" 이런식으로 주면 iframe 에서 name으로 받아서 사용 가능   -->
+
+    <h3>Iframe 공간 분할 예제</h3>
+    <div style="background-color: #ffff00;">
+        <span>
+            <a href="Cp2.html" target="if_a">인사말</a>
+        </span>
+        <span>
+            <a href="Cp3.html" target="if_a">강좌소개</a>
+        </span>
+        <span>
+            <a href="Cp4.html" target="if_a">저자소개</a>
+        </span>
+        <span>
+            <a href="Cp5.html" target="if_b">저자 홈페이지</a>
+        </span>
+    </div>
+
+    <iframe src="../iframe1.html" width="400" height="200" name="if_a" frameborder="0"></iframe>
+    <iframe src="../iframe2.html" width="400" height="200" name="if_b" scrolling="no"></iframe>
+    <div style="background-color: #ffff00;"> 한빛 아카데미(주)</div>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<script src="http://code.jquery.com/jquery-3.1.1.min.js">
+    //    alert("hello world");
+</script>
+<script>
+    /* 내장형 */
+    var num = 100;
+    num += 10;
+//    console.log(num);
+    
+    /* 함수형 */
+    function sum(){
+        
+    }  
+//    document.write('hello javascipt');
+//    document.write('<br><h3>Hello JavaScript</h3>');
+//    
+//    
+//    console.warn('warn'); /* 주의창으로 뛰움 */
+//    console.error('error'); /* Error 로 뛰울수 있다.*/
+//    
+//    var t1 = prompt('입력해주세요.', '기본값');
+//    confirm('진행 하시겠습니까?');
+//    
+//    console.log(t1);
+//    console.log(confirm('진행 하시겠습니까?'));
+    
+    function openpop(){
+        var pop = window.open("","", "width=400 height=300");
+        pop.document.write(
+            "<input type='button' value='닫기' onclick='window.close()'>");
+    }
+    function fclick(obj){
+        console.log(obj.value);
+        if(obj.value != ''){
+            alert('입력된 값 : ' + obj.value);
+        }
+    }
+    function fnMouseOut(obj){
+        console.log(obj.value);
+    }
+    console.log("This 'string'");
+    console.log("Java" +" Script");
+    console.log(Math.abs(5+6) % 2);
+    
+    console.log('가' > '마'); 
+    console.log('가' > '1');
+    console.log('가' > '1');
+    console.log('가' > 'A');
+    
+    console.warn("" == false);
+    console.warn("" == 0);
+    console.warn(0 == false);
+    console.warn(99 == "99");
+    
+    console.log(10 > 5 && 10 < 11); /* TT = T */
+    console.log(10 > 5 && 10 < 10); /* TF = F */
+    console.log(2 < 1 || 2 < 10); /* FT = T */
+    console.log(2 > 1 || 2 < -10); /* FF = F */
+    
+    /* var 식별자 */
+    var data;
+    data = 10; /* 10 */
+    
+    var a = 2;
+    var b = 3;
+    var c = a + b; 
+    console.log(c);
+    
+    var str = 'string';
+    console.log(str);
+    var num = 2324;
+    console.log(num)
+    var isFile = true;
+    console.log(isFile);
+    var myFunc = function(){};
+    console.log(myFunc);
+    var obj = {};
+    console.log(obj);
+    var arr = ['가','나','다','라','마'];
+    console.log(arr.indexOf(1)); /*Indexof = 뺴내는거 자리수에 있는거*/
+    var def;
+    console.error(def);
+    
+    var num = 20;
+    num += 10;
+    console.log(num);
+    
+    var sttr = '';
+    sttr += '<ul>';
+    sttr += '<li>A</li>';
+    sttr += '<li>B</li>';
+    sttr += '<li>C</li>';
+    sttr += '</ul>';
+    
+    document.write(sttr);
+    
+    var add = function(){
+        var tag = "";
+        tag += "<ul>";
+        tag += "<li>Test</li>";
+        tag += "</ul>";
+        document.body.innerHTML += tag;
+    }
+    
+    var name = 'a';
+    console.log(name);
+    var name = 'b';
+    console.log(b);
+    
+    alert('출력');
+    var alert = '재선언';
+    alert('??');
+    
+    </script>
+
+<body>
+   <form action="Script1.html" method="post">
+    <input type="button" value="팝업창" onclick="openpop()">
+    <input type="button" value="닫기" onclick="window.close()">
+    <input type="submit" value="test">
+    </form>
+    <!--<img src="../download.jpg" onmousemove="alert('hi')" onmouseout="alert('by')"/>-->
+    <form>
+        <input type="text" name="id" value="아이디1" onclick="fclick(this)">
+        <input type="text" name="id" value="아이디2"
+            onmousedown="fnMouseDown()" onmouseout="fnMouseOut(this)" onmouseover="fnMouseOver(this)">            
+    </form>
+    
+    <input type="button" value="Tag Change" onclick="add()">
+</body>
+
+</html>
